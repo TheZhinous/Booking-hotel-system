@@ -4,7 +4,7 @@ import Loader from "../Loader/Loader";
 import { useHotels } from "../../context/HotelsProvider";
 
 function Hotels() {
-  const { hotels, isLoading } = useHotels();
+  const { hotels, isLoading , currentHotel } = useHotels();
   if (isLoading) {
     return <Loader />;
   }
@@ -19,7 +19,9 @@ function Hotels() {
           to={`/hotels/${item.id}?&lat=${item.latitude}&lng=${item.longitude}`}
           >
           {/*for finding the center of map we pass latitude and longitude as queryStrings */}
-            <div className="searchItem">
+            <div className={`searchItem ${
+              item.id == currentHotel.id ? "current-hotel" : " "}`
+            }>
               <img src={item.picture_url.url} alt={item.name} />
               <div className="searchItemDesc">
                 <p className="location">{item.smart_location}</p>
