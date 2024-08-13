@@ -24,7 +24,6 @@ function Header() {
     room: searchParams.get("room") || 1,
   });
   const [openDate, setOpenDate] = useState(false);
-  const navigate = useNavigate();
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -32,6 +31,7 @@ function Header() {
       key: "selection",
     },
   ]);
+  const navigate = useNavigate();
   const handleOptions = (name, operation) => {
     setOptions((prev) => {
       return {
@@ -73,24 +73,22 @@ function Header() {
           <span className="seperator"></span>
         </div>
         <div className="headerSearchItem">
-          <div onClick={() => setOpenDate(!openDate)}>
-            <HiCalendar className="headerIcon dateIcon" />
-            <div className="dateDropDown">
-              {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
-                date[0].endDate,
-                "MM/dd/yyyy"
-              )}`}
-            </div>
-            {openDate && (
-              <DateRange
-                className="date"
-                ranges={date}
-                onChange={(item) => setDate([item.selection])}
-                minDate={new Date()}
-                moveRangeOnFirstSelection={true}
-              />
-            )}
+          <HiCalendar className="headerIcon dateIcon" />
+          <div onClick={() => setOpenDate(!openDate)} className="dateDropDown">
+            {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(
+              date[0].endDate,
+              "MM/dd/yyyy"
+            )}`}
           </div>
+          {openDate && (
+            <DateRange
+              className="date"
+              ranges={date}
+              onChange={(item) => setDate([item.selection])}
+              minDate={new Date()}
+              moveRangeOnFirstSelection={true}
+            />
+          )}
           <span className="seperator"></span>
         </div>
         <div className="headerSearchItem">

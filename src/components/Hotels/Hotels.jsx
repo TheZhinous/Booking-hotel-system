@@ -15,9 +15,10 @@ function Hotels() {
       {hotels.map((item) => {
         return (
           <Link
-            key={item.id}
-            to={`/hotels/${item.id}?&lat=${item.latitude}&lng=${item.longitude}`}
+          key={item.id}
+          to={`/hotels/${item.id}?&lat=${item.latitude}&lng=${item.longitude}`}
           >
+          {/*for finding the center of map we pass latitude and longitude as queryStrings */}
             <div className="searchItem">
               <img src={item.picture_url.url} alt={item.name} />
               <div className="searchItemDesc">
