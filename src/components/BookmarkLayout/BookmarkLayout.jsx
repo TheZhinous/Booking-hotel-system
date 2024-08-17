@@ -3,9 +3,8 @@ import Map from "../Map/Map";
 import { Outlet } from "react-router-dom";
 import { useBookmarks } from "../../context/BookmarksProvider";
 
-function Bookmark() {
+function BookmarkLayout() {
   const { bookmarks, isLoading } = useBookmarks();
-  // console.log(bookmarks);
   return (
     <div className="appLayout">
       <div className="sidebar">{<Outlet />}</div>
@@ -14,4 +13,4 @@ function Bookmark() {
   );
 }
 
-export default Bookmark;
+export default BookmarkLayout;
