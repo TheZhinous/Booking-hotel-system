@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import useFetch from "../../hooks/useFetch";
 import Loader from "../Loader/Loader";
 import { useHotels } from "../../context/HotelsProvider";
 import { useEffect } from "react";
@@ -19,7 +18,7 @@ function SingleHotel() {
         <h2>{currentHotel.name}</h2>
         <div>
           {currentHotel.number_of_reviews} review&bull;
-          {currentHotel.smart_location}{" "}
+          {currentHotel.smart_location}
         </div>
         <img src={currentHotel.xl_picture_url} alt={currentHotel.name} />
       </div>

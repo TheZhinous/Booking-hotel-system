@@ -47,9 +47,7 @@ function Header() {
       destination,
       options: JSON.stringify(options),
     });
-
     //! note => setSearchParams(encodedParams);
-
     navigate({
       pathname: "/hotels",
       search: encodedParams.toString(),
