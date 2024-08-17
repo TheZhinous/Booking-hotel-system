@@ -4,17 +4,18 @@ import { toast } from "react-hot-toast";
 import axios from "axios";
 
 const BookmarksContext = createContext();
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "http://localhost:5000/bookmarks";
 
 export default function BookmarksProvider({ children }) {
-  const { data: bookmarks, isLoading } = useFetch(`${BASE_URL}/bookmarks`);
+  const { data: bookmarks, isLoading } = useFetch(`${BASE_URL}`);
   const [currentBookmark, setCurrenBookmark] = useState({});
   const [isLoadingCurrBookmark, setIsLoadingCurrBookmark] = useState(false);
 
-  async function getBookmarks() {
+  async function getBookmarks(id) {
     setIsLoadingCurrBookmark(true);
+    // setCurrenBookmark(null);
     try {
-      const { data } = await axios.get(`${BASE_URL}/bookmarks`);
+      const { data } = await axios.get(`${BASE_URL}/${id}`);
       setCurrenBookmark(data);
       setIsLoadingCurrBookmark(false);
     } catch (error) {
