@@ -1325,24 +1325,6 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Abalessa",
-      "country": "Algeria",
-      "countryCode": "DZ",
-      "latitude": "23.18455079512732",
-      "longitude": "3.795523257510883",
-      "host_location": "Abalessa Algeria",
-      "id": 1
-    },
-    {
-      "cityName": "Mahidasht",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "34.32869425037187",
-      "longitude": "46.724183117022086",
-      "host_location": "Mahidasht Iran (Islamic Republic of)",
-      "id": 4
-    },
-    {
       "cityName": "Sanandaj",
       "country": "Iran (Islamic Republic of)",
       "countryCode": "IR",
@@ -1352,22 +1334,49 @@
       "id": 5
     },
     {
-      "cityName": "A Dakhla Oasis",
-      "country": "Egypt",
-      "countryCode": "EG",
-      "latitude": "25.02090651422749",
-      "longitude": "29.09059588509316",
-      "host_location": "A Dakhla Oasis Egypt",
-      "id": 7
+      "cityName": "Philadelphia",
+      "country": "United States of America (the)",
+      "countryCode": "US",
+      "latitude": "39.958054629445535",
+      "longitude": "-75.18091692975514",
+      "host_location": "Philadelphia United States of America (the)",
+      "id": 16
     },
     {
-      "cityName": "Baba Kot",
-      "country": "Pakistan",
-      "countryCode": "PK",
-      "latitude": "28.43528783183169",
-      "longitude": "67.78003711374224",
-      "host_location": "Baba Kot Pakistan",
-      "id": 8
+      "cityName": "Boryspil",
+      "country": "Ukraine",
+      "countryCode": "UA",
+      "latitude": "50.31559143548544",
+      "longitude": "30.684468439819398",
+      "host_location": "Boryspil Ukraine",
+      "id": 21
+    },
+    {
+      "cityName": "Chunskiy",
+      "country": "Russian Federation (the)",
+      "countryCode": "RU",
+      "latitude": "57.11720712980516",
+      "longitude": "99.97944609689655",
+      "host_location": "Chunskiy Russian Federation (the)",
+      "id": 22
+    },
+    {
+      "cityName": "Isfahan",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "IR",
+      "latitude": "32.65864505646883",
+      "longitude": "51.666771950360506",
+      "host_location": "Isfahan Iran (Islamic Republic of)",
+      "id": 23
+    },
+    {
+      "cityName": "Pszczyna",
+      "country": "Poland",
+      "countryCode": "PL",
+      "latitude": "50.005069885923824",
+      "longitude": "19.009139910261332",
+      "host_location": "Pszczyna Poland",
+      "id": 24
     }
   ]
 }

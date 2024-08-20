@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useHotels } from "../../context/HotelsProvider";
 import {
   MapContainer,
   Marker,
@@ -8,16 +7,13 @@ import {
   useMap,
   useMapEvent,
 } from "react-leaflet";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import useGeoLocation from "../../hooks/useGeoLocation";
 import useUrlLocation from "../../hooks/useUrlLocation";
 
-function Map({markerLocations}) {
-  // const { hotels, isLoading } = useHotels();
+function Map({ markerLocations }) {
   const [mapCenter, setMapCenter] = useState([50, 19]);
-  // const [searchParams, setSearchParams] = useSearchParams();
-  // const lat = searchParams.get("lat");
-  // const lng = searchParams.get("lng");
+//use customhook urllocation instead
   const [lat, lng] = useUrlLocation();
   const {
     getPosition,
@@ -74,7 +70,9 @@ function ChangeMapCenter({ position }) {
 function DetectClick() {
   const navigate = useNavigate();
   useMapEvent({
-    click: (e) => navigate(`/bookmark/add?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
+    click: (e) =>
+      navigate(`/bookmark/add?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
   });
   return null;
 }
+//

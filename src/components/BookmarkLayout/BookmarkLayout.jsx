@@ -5,6 +5,7 @@ import { useBookmarks } from "../../context/BookmarksProvider";
 
 function BookmarkLayout() {
   const { bookmarks, isLoading } = useBookmarks();
+ 
   return (
     <div className="appLayout">
       <div className="sidebar">{<Outlet />}</div>

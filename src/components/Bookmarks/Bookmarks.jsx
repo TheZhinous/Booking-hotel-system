@@ -3,9 +3,16 @@ import { useBookmarks } from "../../context/BookmarksProvider";
 import Loader from "../Loader/Loader";
 import { Link } from "react-router-dom";
 import ReactCountryFlag from "react-country-flag";
+import { HiTrash } from "react-icons/hi";
 
 function Bookmarks() {
-  const { bookmarks, isLoading , currentBookmark } = useBookmarks();
+  const { bookmarks, isLoading, currentBookmark, deleteBookmark } =
+    useBookmarks();
+  const handleDelete = async (e, id) => {
+    e.preventDefault();
+    await deleteBookmark(id);
+  };
+
   if (isLoading) return <Loader />;
   return (
     <div>
@@ -22,9 +29,14 @@ function Bookmarks() {
                   item.id == currentBookmark.id ? "current-bookmark" : ""
                 }`}
               >
-                <ReactCountryFlag svg countryCode={item.countryCode} />
-                &nbsp;<strong>{item.cityName}</strong> &nbsp;
-                <span>{item.country}</span>
+                <div>
+                  <ReactCountryFlag svg countryCode={item.countryCode} />
+                  &nbsp;<strong>{item.cityName}</strong> &nbsp;
+                  <span>{item.country}</span>
+                </div>
+                <button onClick={(e) => handleDelete(e, item.id)}>
+                  <HiTrash className="trash" />
+                </button>
               </div>
             </Link>
           );

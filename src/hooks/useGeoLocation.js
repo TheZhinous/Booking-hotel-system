@@ -20,7 +20,8 @@ export default function useGeoLocation() {
             });
         setIsLoading(false);
       },
-      (err) => {
+        (err) => {
+        
         setError(err.message);
         setIsLoading(false);
       }
