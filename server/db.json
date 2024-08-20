@@ -1334,49 +1334,31 @@
       "id": 5
     },
     {
-      "cityName": "Philadelphia",
-      "country": "United States of America (the)",
-      "countryCode": "US",
-      "latitude": "39.958054629445535",
-      "longitude": "-75.18091692975514",
-      "host_location": "Philadelphia United States of America (the)",
-      "id": 16
-    },
-    {
-      "cityName": "Boryspil",
-      "country": "Ukraine",
-      "countryCode": "UA",
-      "latitude": "50.31559143548544",
-      "longitude": "30.684468439819398",
-      "host_location": "Boryspil Ukraine",
-      "id": 21
-    },
-    {
-      "cityName": "Chunskiy",
-      "country": "Russian Federation (the)",
-      "countryCode": "RU",
-      "latitude": "57.11720712980516",
-      "longitude": "99.97944609689655",
-      "host_location": "Chunskiy Russian Federation (the)",
-      "id": 22
+      "cityName": "Pszczyna",
+      "country": "Poland",
+      "countryCode": "PL",
+      "latitude": "49.99588297334311",
+      "longitude": "18.999194917537277",
+      "host_location": "Pszczyna Poland",
+      "id": 25
     },
     {
       "cityName": "Isfahan",
       "country": "Iran (Islamic Republic of)",
       "countryCode": "IR",
-      "latitude": "32.65864505646883",
-      "longitude": "51.666771950360506",
+      "latitude": "32.67764298459204",
+      "longitude": "51.673041514041486",
       "host_location": "Isfahan Iran (Islamic Republic of)",
-      "id": 23
+      "id": 26
     },
     {
-      "cityName": "Pszczyna",
-      "country": "Poland",
-      "countryCode": "PL",
-      "latitude": "50.005069885923824",
-      "longitude": "19.009139910261332",
-      "host_location": "Pszczyna Poland",
-      "id": 24
+      "cityName": "Yanfolila",
+      "country": "Mali",
+      "countryCode": "ML",
+      "latitude": "10.997411480920956",
+      "longitude": "-8.120548879031466",
+      "host_location": "Yanfolila Mali",
+      "id": 27
     }
   ]
 }

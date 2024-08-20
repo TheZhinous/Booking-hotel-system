@@ -25,9 +25,8 @@ function Bookmarks() {
               to={`${item.id}?lat=${item.latitude}&lng=${item.longitude}`}
             >
               <div
-                className={`bookmarkItem ${
-                  item.id == currentBookmark.id ? "current-bookmark" : ""
-                }`}
+                // we should put ? before id , that make it possible when it is existed
+                className={`bookmarkItem ${item.id == currentBookmark?.id ? "current-bookmark" : "" }`}
               >
                 <div>
                   <ReactCountryFlag svg countryCode={item.countryCode} />
