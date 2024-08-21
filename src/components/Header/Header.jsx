@@ -118,8 +118,8 @@ function Header() {
             <HiSearch className="headerIcon" />
           </button>
         </div>
+        </div>
         <User />
-      </div>
     </div>
   );
 }
