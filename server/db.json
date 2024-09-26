@@ -1343,15 +1343,6 @@
       "id": 25
     },
     {
-      "cityName": "Isfahan",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "32.67764298459204",
-      "longitude": "51.673041514041486",
-      "host_location": "Isfahan Iran (Islamic Republic of)",
-      "id": 26
-    },
-    {
       "cityName": "Yanfolila",
       "country": "Mali",
       "countryCode": "ML",
@@ -1359,6 +1350,24 @@
       "longitude": "-8.120548879031466",
       "host_location": "Yanfolila Mali",
       "id": 27
+    },
+    {
+      "cityName": "South Slave Region",
+      "country": "Canada",
+      "countryCode": "CA",
+      "latitude": "61.53666097477214",
+      "longitude": "-105.13449183152774",
+      "host_location": "South Slave Region Canada",
+      "id": 28
+    },
+    {
+      "cityName": "Oslo",
+      "country": "Norway",
+      "countryCode": "NO",
+      "latitude": "59.94125582542067",
+      "longitude": "10.810546875000002",
+      "host_location": "Oslo Norway",
+      "id": 29
     }
   ]
 }

@@ -21,20 +21,20 @@ export default function HotelsProvider({ children }) {
 
   async function getHotel(id) {
     setIsLoadingCurrHotel(true);
-      try {
-        const { data } = await axios.get(`${BASE_URL}/${id}`);
-        setCurrenHotel(data);
-        setIsLoadingCurrHotel(false)
-      } catch (error) {
-        toast.error(error.message);
-        setIsLoadingCurrHotel(false);
-      }
+    try {
+      const { data } = await axios.get(`${BASE_URL}/${id}`);
+      setCurrenHotel(data);
+      setIsLoadingCurrHotel(false);
+    } catch (error) {
+      toast.error(error.message);
+      setIsLoadingCurrHotel(false);
     }
-
-
+  }
 
   return (
-    <HotelsContext.Provider value={{ isLoading, hotels , currentHotel , getHotel , isLoadingCurrHotel }}>
+    <HotelsContext.Provider
+      value={{ isLoading, hotels, currentHotel, getHotel, isLoadingCurrHotel }}
+    >
       {children}
     </HotelsContext.Provider>
   );

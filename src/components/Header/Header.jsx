@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { MdLocationOn, MdLogout } from "react-icons/md";
+import { MdLocationOn} from "react-icons/md";
 import { HiCalendar, HiLogout, HiMinus, HiPlus, HiSearch } from "react-icons/hi";
 import useOutsideClick from "../../hooks/useOutsideClick";
 import "react-date-range/dist/styles.css"; // main style file
@@ -8,7 +8,6 @@ import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import {
   NavLink,
-  Navigate,
   createSearchParams,
   useNavigate,
   useSearchParams,
@@ -101,7 +100,7 @@ function Header() {
         </div>
         <div className="headerSearchItem">
           <div id="optionDropDown" onClick={() => setOpenOptions(!openOptions)}>
-            {options.adult} adult &bull; {options.children}children &bull;{" "}
+            {options.adult} adult &bull; {options.children}children &bull;&nbsp;
             {options.room}room
           </div>
           {openOptions && (
